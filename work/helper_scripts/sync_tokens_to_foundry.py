@@ -2,7 +2,7 @@ import json
 import asyncio
 import os
 from dotenv import load_dotenv
-from foundry_bridge_ws import FoundryBridgeWSServer  # server class, not client
+from work.foundry_bridge_ws import FoundryBridgeWSServer  # server class, not client
 
 # 📁 Config
 env_path = os.path.join(os.path.dirname(__file__), 'config', '.env')

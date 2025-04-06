@@ -1,26 +1,27 @@
-
-import sys
-import random
-import speech_recognition as sr
 import asyncio
-import edge_tts
-import uuid
-import os
-import json
 import glob
+import json
+import os
+import random
+import re
+import sys
+import threading
+import uuid
+
+import edge_tts
+import speech_recognition as sr
 from PyQt5 import QtGui
 from PyQt5.QtCore import Qt, QMetaObject, Q_ARG
 from PyQt5.QtWidgets import (QApplication, QWidget, QVBoxLayout, QTextEdit,
                              QLineEdit, QPushButton, QLabel, QFileDialog, QHBoxLayout, QTextBrowser)
-
-from character_sheet import CharacterSheet
+from dotenv import load_dotenv
 from openai import OpenAI
-import re
-import threading
-from foundry_bridge_ws import FoundryBridgeWSServer
-from hybrid_engine import run_hybrid_engine
 from pydub import AudioSegment
 from pydub.playback import play
+
+from character_sheet import CharacterSheet
+from foundry_bridge_ws import FoundryBridgeWSServer
+from hybrid_engine import run_hybrid_engine
 
 
 # Init once
@@ -29,10 +30,9 @@ def play_tts_audio(path):
     audio = AudioSegment.from_file(path, format="mp3")
     play(audio)
 
-with open("openai_key.txt", "r") as key_file:
-    api_key = key_file.read().strip()
-
-client = OpenAI(api_key=api_key)
+env_path = os.path.join(os.path.dirname(__file__), 'config', '.env')
+load_dotenv(dotenv_path=env_path)
+client = OpenAI(api_key=(os.getenv("OPENAI_KEY")))
 
 recogniser = sr.Recognizer()
 mic = sr.Microphone()

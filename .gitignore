@@ -1,0 +1,10 @@
+dungeo.iml
+pyvenv.cfg
+.idea/
+__pycache__/
+archive/
+bin/
+config/
+lib/
+lib64/
+lib64
