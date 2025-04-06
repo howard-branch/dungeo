@@ -1,0 +1,87 @@
+{
+  "title": "Shadows over the Sword Coast",
+  "world": {
+    "name": "Forgotten Realms",
+    "region": "Sword Coast",
+    "overview": "Set in the iconic city of Baldur's Gate and surrounding areas, this campaign follows the economic and magical crisis spurred by the iron shortage. Players are thrust into a web of conspiracies and divine legacy."
+  },
+  "summary": "The story begins in the ancient fortress-library of Candlekeep. Hidden behind massive walls and guarded knowledge, your days are filled with study, duty, and strange silences. But something stirs in the shadows of these tomes—a destiny written long before your time.",
+  "recap": "You’ve spent the last few days wandering Candlekeep’s stone courtyards and candlelit halls. Whispers follow your steps. Your foster father, Gorion, has grown distant and uneasy. Something is coming. Something dark.",
+  "locations": [
+    {
+      "name": "Candlekeep",
+      "description": "A secluded fortress-library where the players begin, raised by Gorion."
+    },
+    {
+      "name": "Friendly Arm Inn",
+      "description": "A fortified roadside inn serving as a safe meeting point."
+    },
+    {
+      "name": "Beregost",
+      "description": "A trade town with inns, merchants, and early signs of the Iron Throne's influence."
+    },
+    {
+      "name": "Nashkel",
+      "description": "Mining town affected by the iron crisis and haunted by ancient forces."
+    },
+    {
+      "name": "Cloakwood Forest",
+      "description": "A dangerous forest housing secrets and a hidden base tied to the Iron Throne."
+    },
+    {
+      "name": "Baldur's Gate",
+      "description": "A sprawling city filled with intrigue, divided into Upper, Lower, and Outer districts."
+    }
+  ],
+  "factions": {
+    "Iron Throne": "Merchant consortium manipulating the iron crisis.",
+    "Flaming Fist": "Mercenary force maintaining order in Baldur's Gate.",
+    "Harpers": "Covert organisation maintaining balance.",
+    "Cult of Bhaal": "Dark cult tied to divine heritage and murder."
+  },
+  "npcs": {
+    "Gorion": "The players\u2019 mentor, assassinated early in the story.",
+    "Imoen": "Childhood friend and party member.",
+    "Sarevok": "Main antagonist seeking godhood.",
+    "Elminster": "Powerful sage and occasional guide."
+  },
+  "storyline": [
+    {
+      "act": "Prologue",
+      "summary": "Players flee Candlekeep after Gorion\u2019s death."
+    },
+    {
+      "act": "Act I \u2013 On the Road",
+      "summary": "Investigate the iron crisis through Beregost and Nashkel."
+    },
+    {
+      "act": "Act II \u2013 The Web Tightens",
+      "summary": "Explore Cloakwood, uncover Iron Throne\u2019s secrets and Bhaal cult links."
+    },
+    {
+      "act": "Act III \u2013 The City Trembles",
+      "summary": "Enter Baldur\u2019s Gate amidst political chaos and corruption."
+    },
+    {
+      "act": "Act IV \u2013 Ascension",
+      "summary": "Unveil Sarevok\u2019s plans and face him in a final battle."
+    }
+  ],
+  "themes": [
+    "Divine legacy and identity",
+    "Corruption and justice",
+    "Political intrigue",
+    "Resource manipulation"
+  ],
+  "player_hooks": [
+    "Raised in Candlekeep",
+    "Visions from Bhaal",
+    "Loss due to iron crisis",
+    "Ties to a faction"
+  ],
+  "map_plan": [
+    "World map of Sword Coast",
+    "City map of Baldur\u2019s Gate",
+    "Dungeon maps (Nashkel Mines, Cloakwood Base, Sarevok\u2019s Lair)"
+  ]
+}

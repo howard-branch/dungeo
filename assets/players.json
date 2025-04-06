@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Morgana",
+    "voice": "en-GB-LibbyNeural",
+    "avatar": "assets/avatars/morgana.png",
+    "character_file": "assets/characters/morgana.json"
+  },
+  {
+    "name": "Thorn",
+    "voice": "en-US-GuyNeural",
+    "avatar": "assets/avatars/thorn.png",
+    "character_file": "assets/characters/thorn.json"
+  }
+]

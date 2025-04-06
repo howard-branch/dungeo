@@ -1,0 +1,16 @@
+{
+  "proficiency_bonus": 2,
+  "abilities": {
+    "str": 8,
+    "dex": 14,
+    "con": 12,
+    "int": 16,
+    "wis": 12,
+    "cha": 17
+  },
+  "saving_throws": ["int", "cha"],
+  "skills": {
+    "arcana": { "ability": "int", "proficient": true },
+    "stealth": { "ability": "dex", "proficient": false }
+  }
+}

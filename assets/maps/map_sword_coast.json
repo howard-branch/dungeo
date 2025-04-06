@@ -1,0 +1,77 @@
+{
+  "area": "Sword Coast World Map",
+  "nodes": [
+    {
+      "id": "candlekeep",
+      "label": "Candlekeep",
+      "region": "map_candlekeep.json",
+      "desc": "A remote coastal citadel of knowledge and safety."
+    },
+    {
+      "id": "beregost",
+      "label": "Beregost",
+      "region": "map_beregost.json",
+      "desc": "A bustling crossroads town with inns, smithies, and tension."
+    },
+    {
+      "id": "friendly_arm",
+      "label": "Friendly Arm Inn",
+      "region": "map_friendly_arm.json",
+      "desc": "A fortified inn and rest stop known for its safety."
+    },
+    {
+      "id": "nashkel",
+      "label": "Nashkel",
+      "region": "map_nashkel.json",
+      "desc": "A troubled southern town near the corrupted mines."
+    },
+    {
+      "id": "baldurs_gate",
+      "label": "Baldur's Gate",
+      "region": "map_baldurs_gate.json",
+      "desc": "The sprawling city at the heart of politics and power."
+    },
+    {
+      "id": "cloakwood",
+      "label": "Cloakwood",
+      "region": "map_cloakwood.json",
+      "desc": "A dark, tangled forest hiding secrets and the Iron Throne."
+    },
+    {
+      "id": "firewine",
+      "label": "Firewine Ruins",
+      "region": "map_firewine.json",
+      "desc": "Crumbling ruins filled with ancient traps and lore."
+    }
+  ],
+  "connections": [
+    [
+      "candlekeep",
+      "friendly_arm"
+    ],
+    [
+      "friendly_arm",
+      "beregost"
+    ],
+    [
+      "beregost",
+      "nashkel"
+    ],
+    [
+      "nashkel",
+      "cloakwood"
+    ],
+    [
+      "cloakwood",
+      "baldurs_gate"
+    ],
+    [
+      "beregost",
+      "firewine"
+    ],
+    [
+      "baldurs_gate",
+      "firewine"
+    ]
+  ]
+}

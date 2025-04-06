@@ -1,0 +1,100 @@
+{
+  "area": "Beregost",
+  "nodes": [
+    {
+      "id": "red_sheaf_inn",
+      "label": "Red Sheaf Inn",
+      "desc": "A modest tavern where locals drink away worries and travelers pass through.",
+      "npcs": [
+        {
+          "name": "Karlat",
+          "role": "Bounty Hunter",
+          "dialogue": "There's a price on your head, and I'm here to collect!"
+        }
+      ],
+      "events": [
+        {
+          "type": "combat",
+          "trigger": "enter",
+          "text": "An assassin named Karlat confronts you violently!"
+        }
+      ],
+      "connections": [
+        "main_street"
+      ]
+    },
+    {
+      "id": "thunderhammer_smithy",
+      "label": "Thunderhammer Smithy",
+      "desc": "A well-known forge run by Taerom Fuiruim, offering quality weapons and armour.",
+      "npcs": [
+        {
+          "name": "Taerom Fuiruim",
+          "role": "Blacksmith",
+          "dialogue": "If you\u2019ve got the coin, I\u2019ve got the steel!"
+        }
+      ],
+      "items": [
+        {
+          "name": "Studded Leather Armor",
+          "type": "armor",
+          "usable": true
+        }
+      ],
+      "connections": [
+        "main_street"
+      ]
+    },
+    {
+      "id": "feldposts_inn",
+      "label": "Feldpost's Inn",
+      "desc": "Beregost\u2019s more upscale inn, frequented by merchants and messengers.",
+      "npcs": [
+        {
+          "name": "Marl",
+          "role": "Drunk",
+          "dialogue": "You think you're better than me, eh?"
+        },
+        {
+          "name": "Firebead Elvenhair",
+          "role": "Sage",
+          "dialogue": "Could you fetch that book for me from Candlekeep?"
+        }
+      ],
+      "events": [
+        {
+          "type": "conversation",
+          "trigger": "enter",
+          "text": "A drunken man begins to harass you."
+        }
+      ],
+      "connections": [
+        "main_street"
+      ]
+    },
+    {
+      "id": "main_street",
+      "label": "Main Street",
+      "desc": "The spine of Beregost, linking all key locations in the small town.",
+      "connections": [
+        "red_sheaf_inn",
+        "thunderhammer_smithy",
+        "feldposts_inn"
+      ]
+    }
+  ],
+  "connections": [
+    [
+      "main_street",
+      "red_sheaf_inn"
+    ],
+    [
+      "main_street",
+      "thunderhammer_smithy"
+    ],
+    [
+      "main_street",
+      "feldposts_inn"
+    ]
+  ]
+}

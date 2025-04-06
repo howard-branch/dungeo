@@ -1,0 +1,142 @@
+{
+  "sword_coast": {
+    "area": "Sword Coast World Map",
+    "nodes": [
+      {
+        "id": "candlekeep",
+        "label": "Candlekeep",
+        "desc": "You stand within the towering halls of Candlekeep, a fortress of lost tomes and whispered secrets.",
+        "plot": {
+          "chapter_intro": "The story begins in Candlekeep, where knowledge runs deeper than gold...",
+          "reveal": "A scroll lies partially unrolled near your desk. It bears the mark of a forgotten god."
+        },
+        "npcs": [
+          {
+            "name": "Gorion",
+            "role": "Mentor",
+            "dialogue": "You must leave at once, my child..."
+          }
+        ],
+        "items": [
+          {
+            "name": "Letter from Gorion",
+            "type": "document",
+            "usable": false
+          }
+        ],
+        "events": [
+          {
+            "type": "departure",
+            "trigger": "enter",
+            "text": "The bells of Candlekeep toll as Gorion prepares your escape."
+          }
+        ],
+        "plot": {
+          "reveal": "Gorion has kept secrets from you \u2014 your past is not what it seems.",
+          "progress": "PROLOGUE_ESCAPE_PREP"
+        }
+      },
+      {
+        "id": "baldurs_gate_node",
+        "label": "Baldur\u2019s Gate",
+        "desc": "The grand city looms on the horizon, full of danger and destiny."
+      }
+    ],
+    "connections": [
+      [
+        "candlekeep",
+        "baldurs_gate_node"
+      ]
+    ]
+  },
+  "nashkel_mines": {
+    "area": "Nashkel Mines",
+    "nodes": [
+      {
+        "id": "entrance",
+        "label": "Mine Entrance",
+        "desc": "Collapsed carts and nervous guards.",
+        "npcs": [],
+        "events": [],
+        "plot": {
+          "reveal": "The Iron Throne may have sabotaged this site.",
+          "progress": "ACT_I_MINES_ENTERED",
+          "chapter_intro": "Act I: Trouble in Nashkel. You stand at the gates of danger, where every shadow hides a conspiracy."
+        }
+      }
+    ],
+    "connections": []
+  },
+  "baldurs_gate": {
+    "area": "City of Baldur\u2019s Gate",
+    "nodes": [
+      {
+        "id": "lower_city",
+        "label": "Lower City",
+        "desc": "Cobbled streets full of markets and chaos.",
+        "npcs": [
+          {
+            "name": "Rasaad",
+            "role": "Monk philosopher",
+            "dialogue": "There is balance even in chaos... if one seeks it."
+          }
+        ],
+        "items": [
+          {
+            "name": "Letter to Sarevok",
+            "type": "document",
+            "usable": false
+          }
+        ],
+        "events": [
+          {
+            "type": "scene",
+            "trigger": "enter",
+            "text": "A crowd gathers around a political speaker in the market square."
+          }
+        ],
+        "plot": {
+          "reveal": "Tensions between noble houses are rising.",
+          "progress": "ACT_III_POLITICAL_STRIFE"
+        }
+      }
+    ],
+    "connections": []
+  },
+  "cloakwood_base": {
+    "area": "Cloakwood Forest Base",
+    "nodes": [
+      {
+        "id": "base",
+        "label": "Iron Throne Hideout",
+        "desc": "Log walls, command tents, and secret messages.",
+        "npcs": [
+          {
+            "name": "Agent Veltran",
+            "role": "Commander",
+            "dialogue": "You're too late. The cargo has already left for Baldur's Gate."
+          }
+        ],
+        "items": [
+          {
+            "name": "Iron Shipment Manifest",
+            "type": "document",
+            "usable": true
+          }
+        ],
+        "events": [
+          {
+            "type": "combat",
+            "trigger": "enter",
+            "text": "Iron Throne guards rush to intercept you!"
+          }
+        ],
+        "plot": {
+          "reveal": "Proof of the Iron Throne's involvement is found here.",
+          "progress": "ACT_II_IRON_THRONE_EXPOSED"
+        }
+      }
+    ],
+    "connections": []
+  }
+}

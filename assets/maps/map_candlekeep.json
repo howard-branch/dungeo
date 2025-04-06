@@ -1,0 +1,100 @@
+{
+  "area": "Candlekeep",
+  "nodes": [
+    {
+      "id": "courtyard",
+      "label": "Courtyard",
+      "desc": "The central grounds of Candlekeep bustle with robed scholars and curious monks.",
+      "npcs": [
+        {
+          "name": "Imoen",
+          "role": "Friend",
+          "dialogue": "I'm going with you! You can't stop me, ya know!"
+        },
+        {
+          "name": "Reevor",
+          "role": "Taskmaster",
+          "dialogue": "Clear those rats out of the storehouse!"
+        }
+      ],
+      "events": [
+        {
+          "type": "tutorial",
+          "trigger": "enter",
+          "text": "You recall your lessons under Gorion's watchful eye."
+        }
+      ],
+      "connections": [
+        "bunkhouse",
+        "inner_library",
+        "storehouse"
+      ]
+    },
+    {
+      "id": "bunkhouse",
+      "label": "Bunkhouse",
+      "desc": "Simple quarters where the acolytes and workers sleep.",
+      "npcs": [
+        {
+          "name": "Shank",
+          "role": "Assassin",
+          "dialogue": "Your journey ends here, child!"
+        }
+      ],
+      "events": [
+        {
+          "type": "combat",
+          "trigger": "enter",
+          "text": "An assassin lurks in the shadows!"
+        }
+      ],
+      "connections": [
+        "courtyard"
+      ]
+    },
+    {
+      "id": "inner_library",
+      "label": "Inner Library",
+      "desc": "Towering bookshelves and silent scholars studying ancient tomes.",
+      "npcs": [
+        {
+          "name": "Karan",
+          "role": "Mentor",
+          "dialogue": "You are troubled, my child. Speak freely."
+        }
+      ],
+      "connections": [
+        "courtyard"
+      ]
+    },
+    {
+      "id": "storehouse",
+      "label": "Storehouse",
+      "desc": "Candlekeep\u2019s supplies are stored here, and it's been overrun with vermin.",
+      "events": [
+        {
+          "type": "quest",
+          "trigger": "enter",
+          "text": "Reevor asks you to kill the rats inside."
+        }
+      ],
+      "connections": [
+        "courtyard"
+      ]
+    }
+  ],
+  "connections": [
+    [
+      "courtyard",
+      "bunkhouse"
+    ],
+    [
+      "courtyard",
+      "inner_library"
+    ],
+    [
+      "courtyard",
+      "storehouse"
+    ]
+  ]
+}

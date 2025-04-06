@@ -1,0 +1,66 @@
+{
+  "Mikesrpgcenter": {
+    "mikes": [
+      40,
+      27
+    ],
+    "apg": [
+      111,
+      27
+    ],
+    "renter": [
+      186,
+      27
+    ]
+  },
+  "Candlekeep": {
+    "candlekeep": [
+      52,
+      25
+    ],
+    "inn": [
+      105,
+      24
+    ],
+    "ins": [
+      395,
+      25
+    ],
+    "temple": [
+      437,
+      41
+    ],
+    "library": [
+      213,
+      117
+    ],
+    "storehouse": [
+      429,
+      110
+    ],
+    "barracks": [
+      151,
+      216
+    ],
+    "bunkhouse": [
+      202,
+      249
+    ],
+    "cellars": [
+      287,
+      295
+    ]
+  },
+  "Library2": {
+    "koverbs": [
+      142,
+      64
+    ]
+  },
+  "Library3": {
+    "rieltar": [
+      74,
+      56
+    ]
+  }
+}
