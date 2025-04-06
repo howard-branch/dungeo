@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Candlekeep",
+    "img": "maps/candlekeep_maps/candlekeep.png",
+    "width": 480,
+    "height": 360,
+    "grid": 100,
+    "navigation": true
+  },
+  {
+    "name": "Bgate",
+    "img": "maps/candlekeep_maps/bgate.png",
+    "width": 291,
+    "height": 40,
+    "grid": 100,
+    "navigation": true
+  },
+  {
+    "name": "Library1",
+    "img": "maps/candlekeep_maps/library1.png",
+    "width": 217,
+    "height": 164,
+    "grid": 100,
+    "navigation": true
+  },
+  {
+    "name": "Library2",
+    "img": "maps/candlekeep_maps/library2.png",
+    "width": 222,
+    "height": 159,
+    "grid": 100,
+    "navigation": true
+  },
+  {
+    "name": "Library3",
+    "img": "maps/candlekeep_maps/library3.png",
+    "width": 225,
+    "height": 160,
+    "grid": 100,
+    "navigation": true
+  },
+  {
+    "name": "Library4",
+    "img": "maps/candlekeep_maps/library4.png",
+    "width": 225,
+    "height": 159,
+    "grid": 100,
+    "navigation": true
+  },
+  {
+    "name": "Library5",
+    "img": "maps/candlekeep_maps/library5.png",
+    "width": 175,
+    "height": 126,
+    "grid": 100,
+    "navigation": true
+  }
+]
